@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<name>Mongo Session Manager for Embedded Tomcat</name>
+	<description>Mongo Session Manager for Embedded Tomcat </description>
+
+	<groupId>co.ntier.mongo</groupId>
+	<artifactId>tomcat-session-manager</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
+
+	<properties>
+		<tomcat.run.version>7.0.22</tomcat.run.version>
+		<mongo-java-driver.version>2.4</mongo-java-driver.version>
+		<java.version>1.6</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${mongo-java-driver.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>${tomcat.run.version}</version>
+		</dependency>
+
+	</dependencies>
+	
+	<url>http://ntier.co</url>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<developers>
+		<developer>
+			<name>David Welch</name>
+			<email>david@davidwelch.co</email>
+		</developer>
+	</developers>
+	
+	<scm>
+		<connection>scm:git:git@github.com:dwelch2344/mongo-tomcat-session-manager.git</connection>
+		<developerConnection>scm:git:git@github.com:dwelch2344/mongo-tomcat-session-manager.git</developerConnection>
+		<url>git@github.com:dwelch2344/mongo-tomcat-session-manager.git</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+</project>
