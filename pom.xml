@@ -12,7 +12,7 @@
 
 	<groupId>co.ntier.mongo</groupId>
 	<artifactId>tomcat-session-manager</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-RELEASE</version>
 	<packaging>jar</packaging>
 	
 

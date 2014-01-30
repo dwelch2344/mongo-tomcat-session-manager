@@ -60,7 +60,7 @@ public class MongoSessionManager implements Manager, Lifecycle {
 		this.serverAddress = serverAddress;
 		this.databaseName = databaseName;
 		this.username = username;
-		this.password = password.toCharArray();
+		this.password = password == null ? null : password.toCharArray();
 	}
 	
 	// ****** Life-Cycle Methods ***************************
